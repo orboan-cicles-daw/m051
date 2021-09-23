@@ -1,7 +1,7 @@
 # MP05 Grup 1T
 # Fitxa Informativa
 
-Al primer curs de DAW cursareu les següents Unitats Formatives del Mòdul Professional 03 - Programació:
+Al primer curs de DAW cursareu les següents Unitats Formatives del Mòdul Professional 05 - Entorns de desenvolupament:
 
 1. UF1 - Desenvolupament de programari
 2. UF2 - Optimització del programari
