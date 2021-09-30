@@ -171,10 +171,6 @@ $ git config -l
 user.name=Jordi Casamitjana Querol
 user.email=jcasamq@domini.cat
 user.username=jcasamq
-core.repositoryformatversion=0
-core.filemode=true
-core.bare=false
-core.logallrefupdates=true
 ```
 
 Els valors de configuració que no hem establert nosaltres, tenen uns valors per defecte, que no caldrà canviar.
