@@ -1,0 +1,54 @@
+Crear repo vacio
+
+git init
+
+Añadir ficheros
+
+git add .
+
+Enviar fichero al index area
+
+git commit -m "Enviando al index"
+
+Enviar un fichero al stash area
+git stash
+
+Recuperar del stash
+git stash pop
+
+Listar el stash
+git stash list
+
+Recuperar un stash en concreto
+git stash stash@{NUMERO}
+
+Trabajar con ramas
+ver ramas:
+git branch
+
+cambiar de rama
+git checkout NOMBRE_RAMA
+(recordad que las ramas funcionan como 
+directorios separados y los cambios consolidados 
+no se ven)
+
+Juntar ramas (desde la rama principal)
+git merge RAMA_A_FUSIONAR
+
+Si hay conflictos debemos solucionarlos y 
+despues hacer:
+git add .
+git commit -m "Ramas juntas"
+
+
+Clonar un repositorio existente
+git clone URL_REPO
+
+Para subir los cambios siempre debemos hacer
+
+git pull origin master
+git push origin master
+
+Origin es la rama remota
+master es la rama local
+
