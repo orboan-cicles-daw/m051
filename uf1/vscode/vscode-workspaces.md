@@ -242,4 +242,10 @@ En aquest exercici us demanem que, seguint les explicacions anteriors, creeu un 
 > La ubicació arrel d'aquest _workspace_ ha de ser ``~/workspaces/python/``
 
 
+## Exercici addicional: instal·lació d'extensions
 
+Com a exercici addicional, instal·leu l'extensió **vscode-icons** al vostre vscode.
+
+Un cop instal·lat, l'haureu d'activar.
+
+Forma part d'aquest exercici que trobeu pel vostre compte (usant Internet si cal) com instal·lar una extensió a VSCode (és molt fàcil).
