@@ -20,11 +20,13 @@ _VS Code_ se'ns obrirà en una nova pestanya amb el _workspace_ per defecte corr
 
 ## Creació d'un workspace per a projectes Java
 
-Des del mateix _workspace_ per defecte (~/workspaces) anem al menú i cliquem a:
+A VSCode, des del mateix _workspace_ per defecte (~/workspaces) anem al menú i cliquem a:
 
 ```
 File > Save Workspace As ...
 ```
+
+(El menú es troba a la part superior esquerra, on hi ha la icona tipus hamburguesa amb tres línies horizontals).
 
 Li donem el nom que apareix en la següent imatge:
 
@@ -32,9 +34,9 @@ Li donem el nom que apareix en la següent imatge:
 
 Amb aquesta acció generarem un fitxer on es guardaran totes les propietats del _workspace_ que hem anomenat ``java.code-workspace``. Aquest fitxer quedarà guardat a _~/workspaces_.
 
-> El fitxer ``java.code-workspace`` correspon a un _workspace_ configurable amb múltiples carpetes.
+> El fitxer ``java.code-workspace`` correspon a un _workspace_ configurable **amb múltiples carpetes**.
 
-Per defecte, un _workspace_ correspon a una carpeta o directori. Però també podem crear un _workspace_ amb múltiples carpetes, cadascuna que pugui correspondre a un **projecte java** diferent.
+Per defecte, un _workspace_ correspon a una carpeta o directori. Però també podem crear un _workspace_ amb múltiples carpetes, cadascuna que pugui correspondre a un **projecte java** diferent. Això és el que volem fer.
 
 Un cop acabada l'acció de ``Save Workspace As ...`` el vscode es recarregarà automàticament amb el nou _workspace_:
 
@@ -97,7 +99,9 @@ Li donem el nom ``Main.java``:
 
 > En afegir un fitxer ``.java`` vscode activa automàticament les extensions necessàries per a treballar amb Java (si no estaven activades ja).
 
-**Podeu observar com a vscode, a la part inferior esquerre de la finestra ``Explorer``, ha aparegut una nova secció anomenada ``Java Projects``, la qual ja conté el projecte Java ``HelloWorld``**. Ara, la carpeta ``HelloWorld`` que pertany al _workspace_ de Java **ja és un projecte Java**:
+**Podeu observar com a vscode, a la part inferior esquerre de la finestra ``Explorer``, ha aparegut una nova secció anomenada ``Java Projects``, la qual ja conté el projecte Java ``HelloWorld``**. 
+
+> Ara, la carpeta ``HelloWorld`` que pertany al _workspace_ de Java **ja és un projecte Java**:
 
 ![projecte-helloworld](images/projecte-helloworld.png)
 
@@ -194,7 +198,7 @@ Se'ns obrirà, en una nova pestanya del navegador, una nova instància de VS Cod
 
 > Treballar sobre aquest workspace, corresponent a un únic projecte Java, és una opció. Però si volem tenir agrupats tots els projectes Java en un sol workspace, farem el següent:
 
-A la instància de VS Code corresponent al _workspace_ java, anirem al menú i afegirem una nova carpeta al _workspace_, **escollint la carpeta corresponent al nou projecte Java que hem creat, és a dir, ``~/workspaces/java/SampleProject``:
+A la instància de VS Code corresponent al _workspace_ java, anirem al menú i afegirem una nova carpeta al _workspace_, **escollint la carpeta corresponent al nou projecte Java que hem creat, és a dir, ``~/workspaces/java/SampleProject``**:
 
 ```
 Menú > File > Add Folder to Workspace ...
@@ -207,15 +211,41 @@ Ara, ja tenim els dos projectes Java (_HelloWorld_ i _SampleProject_) ubicats al
 ![multi-project-ws](images/multi-project-ws.png)
 
 
-## Exercici: creació d'un _workspace_ multi projecte
+## Exercici: creació de projectes Java
 
-En aquest exercici us demanem que, seguint les explicacions anteriors, creeu un _workspace_ destinat a agrupar tots els projectes Java que siguin **Pràctiques Avaluables de Java** d'aquest curs i dels cursos de programació.
+> Heu de crear 2 projectes Java, dins del workspace Java, anomenats "_M5_test1_" i "_M5_test2_". Heu de fer servir la plantilla _**No Build Tools**_ quan seleccioneu el tipus de projecte.
 
-> La ubicació arrel d'aquest _workspace_ ha de ser ``~/workspaces/java-ep/``
+Amb la plantilla _No Build Tools_ el projecte Java que es genera és una simple impresió per pantalla de _Hello World!_. **Comproveu que els dos projectes s'executen correctament**. **Ho heu de fer des del workspace multiprojecte Java**.
 
-> Hi heu de crear 2 projectes Java, dins d'aquest workspace, anomenats "_M5_EP1_java_" i "_M5_EP2_java_". Heu de fer servir la plantilla _**No Build Tools**_ quan seleccioneu el tipus de projecte.
+A continuació, al projecte "_M5_test2_", substituiu el codi java que autmàticament ha generat vscode, pel següent codi:
 
-Amb la plantilla _No Build Tools_ el projecte Java que es genera és una simple impresió per pantalla de _Hello World!_. **Comproveu que els dos projectes s'executen correctament**.
+```java
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+        System.out.print("\nEscriu el teu nom: ");
+        String nom = in.nextLine();
+        System.out.println("\nHola " + nom + "!!\n");
+        in.close();
+    }
+}
+```
+
+**Comproveu que aquest nou codi s'executa correctament**.
+
+## Exercici: creació d'un _workspace_ multi projecte per a python
+
+En aquest exercici us demanem que, seguint les explicacions anteriors, creeu un _workspace_ destinat a agrupar tots els projectes python que pugueu fer al llarg d'aquest curs i dels cursos de programació o de bioinformàtica.
+
+> La ubicació arrel d'aquest _workspace_ ha de ser ``~/workspaces/python/``
 
 
+## Exercici addicional: instal·lació d'extensions
 
+Com a exercici addicional, instal·leu l'extensió **vscode-icons** al vostre vscode.
+
+Un cop instal·lat, l'haureu d'activar.
+
+Forma part d'aquest exercici que trobeu pel vostre compte (usant Internet si cal) com instal·lar una extensió a VSCode (és molt fàcil).
